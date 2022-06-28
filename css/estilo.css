@@ -1,0 +1,164 @@
+
+body{
+	background-image: url(../img/back.jpg);
+}
+
+h1{
+	font-family: 'Joan', serif;
+	font-size: 6rem;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+}
+
+ul{
+	list-style: none;
+}
+
+
+/*Aca empieza flexbox*/
+
+
+#contenedor{
+	display: flex;
+  justify-content: space-around;
+  
+}
+
+
+
+
+nav ul{
+   display: flex;
+   
+}
+
+
+nav ul li{
+  margin: 0.5px;
+	padding: 20px;
+  font-weight: bold ;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	}	
+
+.imagenLibros{
+	width: 80%;
+	height: auto;
+	margin: 80px 100px 30px 150px;
+}
+
+
+.main{
+  font-family: 'Joan', serif;
+  color: white;
+  line-height: 2 1;
+  background-color: #493FAE;
+  width: 50%;
+  margin: 100px auto;
+  padding: 3%;
+  border:groove 10px #A3BAED;
+
+
+}
+
+#Tabla{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 100px;
+	margin-top: 100px;
+	
+}
+
+tr td{
+	padding: 15px 15px 15px 15px;
+}
+
+tr th{
+	padding: 10px 10px 10px 10px;
+}
+
+
+footer{
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: bold;
+  border-top:double 8px #A3BAED;
+  /*Footer Flex*/
+  display: flex;
+  justify-content: center;
+}
+
+
+.fomulario{
+	font-size: 2rem;
+	margin-left: 30%;
+	padding-right: 50%;
+}
+
+ 
+
+
+#piedePagina{
+	margin-top: 100px;
+}
+
+.label{
+	width: 300px;
+	height: 300px;
+}
+
+
+	
+}
+
+#content{
+  display:grid;
+	
+}
+
+.imagen1{
+	display: grid;
+	gap: 5px;
+
+
+	border-radius: 25px;
+	width: 600px;
+	height: 400px;
+	margin-bottom: 25px;
+	box-shadow: 5px 8px 12px black;
+	
+}
+
+.imagen2{
+  border-radius: 25px;
+  box-shadow: 5px 8px 12px black;
+}
+
+.imagen3{
+  border-radius: 25px;
+  box-shadow: 5px 8px 12px black;
+}
+
+.imagen4{
+  border-radius: 25px;
+  box-shadow: 5px 8px 12px black;
+}
+
+.imagenes{
+	display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  font-size: 20px;
+
+}
+
+
+.elfos{
+	font-size: 20px;
+}
