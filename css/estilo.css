@@ -7,7 +7,11 @@ h1{
 	font-family: 'Joan', serif;
 	font-size: 6rem;
 	text-align: center;
+  animation-name: tituloPrincipal;
+  animation-duration: 4s;
 }
+
+
 
 h2{
 	font-family: 'Roboto', sans-serif;
@@ -37,6 +41,7 @@ nav ul{
 }
 
 
+
 nav ul li{
   margin: 0.5px;
 	padding: 20px;
@@ -44,7 +49,11 @@ nav ul li{
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	font-size: 25px;
-	}	
+	
+	
+	cursor: pointer;
+}
+
 
 .imagenLibros{
 	width: 80%;
@@ -125,14 +134,16 @@ footer{
 .imagen1{
 	display: grid;
 	gap: 5px;
-
-
-	border-radius: 25px;
+  
+  border-radius: 25px;
 	width: 600px;
 	height: 400px;
 	margin-bottom: 25px;
+	margin-left: 10px;
 	box-shadow: 5px 8px 12px black;
-	
+  
+  transform: translateX(50px);
+  cursor: pointer;
 }
 
 .imagen2{
@@ -161,4 +172,18 @@ footer{
 
 .elfos{
 	font-size: 20px;
+}
+
+
+!-- Acá empieza el animaciones -->
+
+@keyframes tituloPrincipal{
+	 from{opacity: 0}
+	 to{opacity: 1}
+}
+
+
+.transfo:hover{
+	transform: translateX(10px);
+	cursor: pointer;
 }
