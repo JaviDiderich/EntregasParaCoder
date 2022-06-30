@@ -3,15 +3,17 @@ body{
 	background-image: url(../img/back.jpg);
 }
 
-h1{
+div h1{
 	font-family: 'Joan', serif;
 	font-size: 6rem;
 	text-align: center;
-  animation-name: tituloPrincipal;
+	animation-name: titulo;
   animation-duration: 4s;
+  font-weight: bold;  
 }
 
 
+}
 
 h2{
 	font-family: 'Roboto', sans-serif;
@@ -21,6 +23,7 @@ h2{
 ul{
 	list-style: none;
 }
+
 
 
 /*Aca empieza flexbox*/
@@ -48,7 +51,8 @@ nav ul li{
   font-weight: bold ;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	font-size: 25px;
+	font-size: 30px;
+	margin-top: 20px;
 	
 	
 	cursor: pointer;
@@ -74,6 +78,17 @@ nav ul li{
 
 
 }
+
+
+.tituloTabla{
+	font-size: 2.5rem;
+  margin-left: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
 
 #Tabla{
 	font-family: 'Roboto', sans-serif;
@@ -177,9 +192,9 @@ footer{
 
 !-- Acá empieza el animaciones -->
 
-@keyframes tituloPrincipal{
-	 from{opacity: 0}
-	 to{opacity: 1}
+@keyframes titulo{
+	from{opacity: 0}
+	to{opacity: 1}
 }
 
 
@@ -187,3 +202,4 @@ footer{
 	transform: translateX(10px);
 	cursor: pointer;
 }
+
