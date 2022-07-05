@@ -259,12 +259,36 @@ section article form div{
 	}
 
  .main{
- 	font-size: 20px;
+ 	display: none;
+    }
+
+ .parrafo{
+	font-size: 20px;
+	margin-left: 10px;
  }
 
 
-
 }
+
+
+
+
+@media (max-width: 480px) {
+	nav ul li{
+		font-size: 12px;
+		
+	}
+    
+	.tituloTabla{
+		font-size: 20px;
+		margin-top: 50px;
+	}
+    
+	.pie{
+		font-size: 15px;
+	}
+}
+
 
 
 
