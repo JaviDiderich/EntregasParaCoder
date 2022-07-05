@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
    
-       <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+   
 
 
 
@@ -42,18 +42,18 @@
 
  <!-- formulario de contacto -->
 
-     <section class="formulario">
+     <section >
       <article>
-          <form class="formulario" action="Contactame_submit" method="get" accept-charset="utf-8">
-              <input type="text" placeholder="Nombre y apellido"> <br>
-              <input type="email" placeholder="Tu mail"> <br>
-              <input type="number" placeholder="Tu edad"> 
+          <form action="Contactame_submit" method="get" accept-charset="utf-8">
+              <input class="casillero" type="text" placeholder="Nombre y apellido"> <br>
+              <input class="casillero" type="email" placeholder="Tu mail"> <br>
+              <input class="casillero" type="number" placeholder="Tu edad"> 
               
-              <div class="formulario"><p><strong>Sexo:</strong></p>
-                <div>Masculino
+              <div><p><strong class="radius">Sexo:</strong></p>
+                <div class="sexo">Masculino
                    <input type="radio" name="sexo" value="Masculino">
                 </div>
-                <div>Femenino
+                <div class="sexo">Femenino
                    <input type="radio" name="sexo" value="Femenino">
                 </div>
 
@@ -68,14 +68,15 @@
                 <div><strong>Acepto condiciones</strong>
                     <input type="checkbox" name="Acepto" value="1">
                 </div>
-
-                <label class="label" for="Pega tu cuento/relato aquí"><p><strong>Pega tu cuento/relato aquí:</strong></p>
-                    <textarea placeholder="Pega tu cuento/relato aquí:"></textarea>
-                </label>
+                
+                <div class="input-group">
+                  <span class="input-group-text">Escribí tu cuento acá</span>
+                  <textarea  class="form-control" aria-label="With textarea"></textarea>
+                </div>
 
                 <div><p><strong>Enviar</strong></p>
-                   <input type="submit" value="Enviar todo"></a>
-                   <input type="reset" value="Resetar datos">
+                   <input class="boton" type="submit" value="Enviar todo"></a>
+                   <input class="boton" type="reset" value="Resetar datos">
                </div>
 
 
