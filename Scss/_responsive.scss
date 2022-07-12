@@ -1,0 +1,45 @@
+//full responsive
+
+
+@media (max-width: 768px) {
+
+	div h1{
+		font-size: 40px;
+	}
+
+	nav ul li{
+		font-size: 20px;
+	}
+
+ .main{
+ 	display: none;
+    }
+
+ .parrafo{
+	font-size: 20px;
+	margin-left: 10px;
+ }
+
+
+}
+
+
+
+
+@media (max-width: 480px) {
+	nav ul li{
+		font-size: 12px;
+		
+	}
+    
+	.tituloTabla{
+		font-size: 20px;
+		margin-top: 50px;
+	}
+    
+	.pie{
+		font-size: 15px;
+	}
+}
+
+

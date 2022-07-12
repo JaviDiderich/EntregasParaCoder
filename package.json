@@ -1,0 +1,23 @@
+{
+  "name": "repositorios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compilar:sass": "sass --watch scss/estilo.scss css/estilo.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaviDiderich/EntregasParaCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaviDiderich/EntregasParaCoder/issues"
+  },
+  "homepage": "https://github.com/JaviDiderich/EntregasParaCoder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

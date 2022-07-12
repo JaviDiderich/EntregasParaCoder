@@ -1,0 +1,102 @@
+
+//anidacion
+
+//index
+
+body{
+	background-image: url(../img/fondo.webp);
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+div h1{
+	font-family: $firstFont;
+	font-size: 6rem;
+	text-align: center;
+	animation-name: textTitulo;
+    animation-duration: 4s;
+    font-weight: bold; 
+
+}
+
+@keyframes textTitulo{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+h2{
+	font-family: $secondFont;
+	font-size: 2rem;
+}
+
+.main{
+    font-family: $firstFont;
+    color: black;
+    line-height: 2 1;
+    width: 50%;
+    margin: 100px auto;
+    padding: 3%;
+    border:groove 10px #FFB35A;
+    box-shadow: 1px 3px 1px 3px;
+  }
+
+
+
+  //contactame
+
+section article form{
+
+    margin-left: 25px;
+    padding: 25px;
+       div{
+        margin-bottom: 5px;
+    
+        }
+        .casillero{
+            padding: 5px;
+            border: solid beige;
+            margin-bottom: 5px;
+        }
+        
+        .boton{
+            font-size: 20px;
+            border: solid beige;
+        }
+        
+        .label{
+            width: 300px;
+            height: 300px;
+        }
+   }
+   
+   
+    #content{
+     display:grid;
+       
+   }
+   
+
+
+
+//publicaciones
+
+  .imagn{
+	width: 950px;
+	height: 700px;
+	margin-left: 500px;
+	
+}
+
+//sobremi
+
+.letra :first-letter{
+	font-size: 3rem;
+	padding: 3px;
+	font-family: 'Joan', serif; 
+	font-weight: bold;
+}
+
+
+
+
+
