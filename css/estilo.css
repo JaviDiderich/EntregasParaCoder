@@ -1,3 +1,11 @@
+div h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 .tituloTabla {
   font-size: 2.5rem;
   margin-left: 20px;
@@ -65,8 +73,8 @@ body {
 }
 
 div h1 {
-  font-family: "Joan", serif;
   font-size: 6rem;
+  font-family: "Joan", serif;
   text-align: center;
   animation-name: textTitulo;
   animation-duration: 4s;
@@ -83,10 +91,10 @@ div h1 {
 }
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.main {
+.main, .txtMain {
   font-family: "Joan", serif;
   color: black;
   line-height: 2 1;
@@ -128,7 +136,7 @@ section article form .label {
   margin-left: 500px;
 }
 
-.letra :first-letter {
+.letra :first-letter, .main :first-letter, .txtMain :first-letter {
   font-size: 3rem;
   padding: 3px;
   font-family: "Joan", serif;
@@ -142,7 +150,7 @@ section article form .label {
   nav ul li {
     font-size: 20px;
   }
-  .main {
+  .main, .txtMain {
     display: none;
   }
   .parrafo {

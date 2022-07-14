@@ -9,14 +9,10 @@ body{
     background-attachment: fixed;
 }
 
-div h1{
-	font-family: $firstFont;
-	font-size: 6rem;
-	text-align: center;
-	animation-name: textTitulo;
-    animation-duration: 4s;
-    font-weight: bold; 
+//MIXIN
 
+div h1{
+    @include text(6rem, $firstFont, center )
 }
 
 @keyframes textTitulo{
@@ -26,7 +22,7 @@ div h1{
 
 h2{
 	font-family: $secondFont;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 .main{
@@ -38,7 +34,8 @@ h2{
     padding: 3%;
     border:groove 10px #FFB35A;
     box-shadow: 1px 3px 1px 3px;
-  }
+    @extend .letra 
+}
 
 
 
@@ -90,13 +87,15 @@ section article form{
 //sobremi
 
 .letra :first-letter{
-	font-size: 3rem;
+	
+    font-size: 3rem;
 	padding: 3px;
 	font-family: 'Joan', serif; 
 	font-weight: bold;
+   }
+
+//EXTENDED
+
+.txtMain{
+     @extend .main
 }
-
-
-
-
-
