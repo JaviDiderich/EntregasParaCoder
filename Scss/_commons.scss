@@ -9,14 +9,10 @@ body{
     background-attachment: fixed;
 }
 
-div h1{
-	font-family: $firstFont;
-	font-size: 6rem;
-	text-align: center;
-	animation-name: textTitulo;
-    animation-duration: 4s;
-    font-weight: bold; 
+//MIXIN
 
+div h1{
+    @include text(6rem, $firstFont, center )
 }
 
 @keyframes textTitulo{
@@ -26,11 +22,12 @@ div h1{
 
 h2{
 	font-family: $secondFont;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 .main{
     font-family: $firstFont;
+    font-size: 1.3rem;
     color: black;
     line-height: 2 1;
     width: 50%;
@@ -38,7 +35,10 @@ h2{
     padding: 3%;
     border:groove 10px #FFB35A;
     box-shadow: 1px 3px 1px 3px;
-  }
+    @extend .letra 
+}
+
+
 
 
 
@@ -80,23 +80,47 @@ section article form{
 
 //publicaciones
 
-  .imagn{
-	width: 950px;
-	height: 700px;
-	margin-left: 500px;
-	
-}
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  
+  .card {
+    margin-top: 80px;
+    box-shadow: 10px 10px 10px 10px;
 
-//sobremi
+  }
+
+  .card-color {
+    color: #FFB35A;
+    font-size: 25px;
+    text-decoration: none;
+
+  }
+
+
+//Contactame
 
 .letra :first-letter{
-	font-size: 3rem;
+	
+    font-size: 3rem;
 	padding: 3px;
 	font-family: 'Joan', serif; 
 	font-weight: bold;
+   }
+
+   .mail {
+    text-align: center;
+    text-decoration: double;
+    font-size: 1.2rem;
+    font-family: $firstFont;
 }
 
+//EXTENDED
 
-
-
-
+.txtMain{
+     @extend .main
+}

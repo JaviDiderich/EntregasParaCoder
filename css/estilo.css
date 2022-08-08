@@ -1,3 +1,11 @@
+div h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 .tituloTabla {
   font-size: 2.5rem;
   margin-left: 20px;
@@ -50,12 +58,13 @@ footer {
   font-size: 1.5rem;
   font-family: "Joan", serif;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 70px;
   /*Footer Flex*/
   display: flex;
   justify-content: center;
   flex-direction: row;
+  background: linear-gradient(to rigth, beige, #FFB35A);
 }
 
 body {
@@ -65,8 +74,8 @@ body {
 }
 
 div h1 {
-  font-family: "Joan", serif;
   font-size: 6rem;
+  font-family: "Joan", serif;
   text-align: center;
   animation-name: textTitulo;
   animation-duration: 4s;
@@ -83,11 +92,12 @@ div h1 {
 }
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.main {
+.main, .txtMain {
   font-family: "Joan", serif;
+  font-size: 1.3rem;
   color: black;
   line-height: 2 1;
   width: 50%;
@@ -122,17 +132,36 @@ section article form .label {
   display: grid;
 }
 
-.imagn {
-  width: 950px;
-  height: 700px;
-  margin-left: 500px;
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.letra :first-letter {
+.card {
+  margin-top: 80px;
+  box-shadow: 10px 10px 10px 10px;
+}
+
+.card-color {
+  color: #FFB35A;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.letra :first-letter, .main :first-letter, .txtMain :first-letter {
   font-size: 3rem;
   padding: 3px;
   font-family: "Joan", serif;
   font-weight: bold;
+}
+
+.mail {
+  text-align: center;
+  text-decoration: double;
+  font-size: 1.2rem;
+  font-family: "Joan", serif;
 }
 
 @media (max-width: 768px) {
@@ -142,7 +171,7 @@ section article form .label {
   nav ul li {
     font-size: 20px;
   }
-  .main {
+  .main, .txtMain {
     display: none;
   }
   .parrafo {
@@ -152,7 +181,7 @@ section article form .label {
 }
 @media (max-width: 480px) {
   nav ul li {
-    font-size: 12px;
+    font-size: 10px;
   }
   .tituloTabla {
     font-size: 20px;
